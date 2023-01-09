@@ -29,12 +29,31 @@
     --other_label_dark:#9c9c9c;
 }
 
+.center {
+  position: absolute;
+  width: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 .card {
     margin: auto;
     background-color:var(--base);
     border-radius:20px;
     box-shadow: var(--base_shadow);
-    padding: 30px;
+    
+}
+
+.card-bg {
+    margin-top:-125px;
+    margin-left:-430px;
+    height: 40rem;
+    width: 50rem;
+    background: radial-gradient(88.1% 88.1% at 75.68% 13.69%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #F0E103;
+    border-radius:70px;
+    position:absolute;
+    transform:rotate(-45deg);
 }
 
 .logo {
