@@ -1,0 +1,30 @@
+.checkbox { 
+    margin: auto;
+    height: 1rem;
+    width: 1rem;
+    background: var(--base);
+    border: 1 var(--accent) solid;
+    margin-right: 4px;
+}
+  
+.checkbox--active {
+    outline: 1px var(--base_dark) solid;
+    outline-offset: 0;
+    background: var(--secondary-color);
+}
+  
+.checkbox-wrapper input[type="checkbox"] {
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    border-radius: 0.17em;
+    border: 0.15em solid var(--grey3);
+    /* outline: none; */
+    cursor: pointer;
+}
+
+.checkbox-wrapper[type="checkbox"]::befores {
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
