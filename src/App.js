@@ -30,11 +30,11 @@ function App() {
 
         <section class="">
           <div class="flex flex-col items-center" style={{padding:10}}>
-            <TextInput label={"Usuário"} placeholder={"Email"}/>
+            <TextInput label={"Usuário"} placeholder={"Email"} icon="fa-regular fa-envelope"/>
 
             <br></br>
 
-            <TextInput label={"Senha+OTP"} placeholder={"Senha"}/>
+            <TextInput type={"password"} label={"Senha+OTP"} placeholder={"Senha"} icon="fa-regular fa-eye"/>
 
             <br></br>
           </div>
@@ -46,7 +46,7 @@ function App() {
         </section>
         
         <section class="flex flex-col content-center" style={{paddingLeft:65,paddingRight:65,paddingTop:'3rem'}}>
-          <Btn text="Entrar"/>
+          <Btn text={"Entrar"}/>
         </section>
       </div>
     

@@ -5,10 +5,21 @@ button {
     color: var(--secondary-color);
     padding: 11px;
     width: 30%;
-    transition:.1s
+    transition: all .3s ease-in;
 }
   
 button:hover {
     background-color: var(--grey1);
-    transition:.5s;
+}
+
+button:active {
+    color: var(--accent_dark);
+    background-color: var(--secondary-color);
+    outline: .2rem var(--accent_dark) solid;
+    transition: 0.1s ease-out;
+}
+
+button:focus {
+    outline: .2rem var(--secondary-color) solid;
+    outline-offset: 2px;
 }
