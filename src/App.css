@@ -33,8 +33,9 @@ a {
     transition: all 0.1s ease-in-out;
 }
 
-a:hover {
+a.text-opacity-50:hover {
     text-decoration: underline;
+    --tw-text-opacity: 0.8;
 }
 
 a:active {

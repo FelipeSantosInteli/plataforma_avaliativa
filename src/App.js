@@ -34,14 +34,14 @@ function App() {
 
             <br></br>
 
-            <TextInput type={"password"} label={"Senha+OTP"} placeholder={"Senha"} icon="fa-regular fa-eye"/>
+            <TextInput type={"password"} label={"Senha"} placeholder={"Senha"} icon="fa-regular fa-eye"/>
 
             <br></br>
           </div>
 
           <section class="flex flex-row justify-around">
             <Checkbox label={"Continuar conectado"}/>
-            <a href='#' class="link" style={{margin:0,padding:1}}>Esqueceu a senha?</a>
+            <a href='#' class="text-black text-opacity-50" style={{margin:0,padding:1}}>Esqueceu a senha?</a>
           </section>
         </section>
         
@@ -52,6 +52,10 @@ function App() {
     
     </div>
   );
+}
+
+function Home() {
+
 }
 
 export default App;
