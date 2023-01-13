@@ -12,9 +12,9 @@ function Home() {
     var compactUserManager = userManager.split(' ').slice(0, 2).join(' ');
 
     return (
-        <body class="">
-            <Navbar userName={userName}/>
-            <div id="mainScreen" class="mainScreen w-full flex overflow-clip p-16 pt-48">
+        <div class="">
+            <Navbar />
+            <div id="mainScreen" class="mainScreen p-16 pt-52">
                 <section>   
                     <div class="card p-8">
                         <div class="flex flex-row items-center justify-between pb-4">
@@ -41,7 +41,7 @@ function Home() {
                     <div></div>
                 </section>
             </div>
-        </body>
+        </div>
     )
 }
 

@@ -61,7 +61,7 @@ a:active {
 }
 
 .card {
-    margin: auto;
+    margin: 0;
     background-color:var(--base);
     border-radius:20px;
     box-shadow: var(--base_shadow);
@@ -70,4 +70,13 @@ a:active {
 .box-container {
     border-radius:20px;
     border: 2px solid var(--grey2);
+}
+
+.mainScreen {
+    background:var(--accent);
+    min-height:100vh;
+    min-width:100%;
+    height: 200vh;
+    width: 100%;
+    display: flex;
 }

@@ -4,7 +4,6 @@ import Btn from '../../componets/Btn'
 
 import './login.css'
 
-import logo from '../../assets/images/vtal_black.png'
 import brasil from '../../assets/images/brasil.png'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';

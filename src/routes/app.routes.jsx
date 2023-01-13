@@ -12,7 +12,7 @@ export function AppRoutes() {
         <Routes>
             <Route path='/' element={<Login />} />
             <Route path='/home' element={<Home />}/>
-            <Route path='/people' element={<People />}/>
+            <Route path='/people' element={<People/>}/>
     
         </Routes>
         </Router>

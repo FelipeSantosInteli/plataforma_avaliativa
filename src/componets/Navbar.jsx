@@ -20,9 +20,9 @@ import { Link } from 'react-router-dom';
             var mainScreen = document.getElementById("mainScreen")
             header.classList.toggle("sticky", window.scrollY >0);
             if (window.scrollY >0) {
-                mainScreen.classList.replace("pt-48","pt-32")
+                mainScreen.classList.replace("pt-52","pt-36")
             } else {
-                mainScreen.classList.replace("pt-32","pt-48")
+                mainScreen.classList.replace("pt-36","pt-52")
             }
         })
 
@@ -30,7 +30,7 @@ import { Link } from 'react-router-dom';
         $(function () {
             var header = document.querySelector("header");
             $(window).scroll(function () {
-                if ($(window).scrollTop() == 0) {
+                if ($(window).scrollTop() === 0) {
                     header.style.height ="11rem";
                 }
             });
@@ -57,6 +57,8 @@ import { Link } from 'react-router-dom';
             }
             prevScrollpos = currentScrollPos;
         }
+
+        var userName = "Kil Mateus Gomes Teixeira"
 
         var compactUserName = userName.split(' ').slice(0, 2).join(' '); // retorna primeiro e segundo nome
         
@@ -88,4 +90,4 @@ import { Link } from 'react-router-dom';
         )
 }
 
-export default Navbar
+export default Navbar;
