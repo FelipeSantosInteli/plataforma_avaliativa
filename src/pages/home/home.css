@@ -1,0 +1,10 @@
+.mainScreen {
+    background:var(--accent);
+    min-height:100vh;
+    min-width:100%;
+    height: 200vh;
+}
+
+.card {
+    margin: 0;
+}
