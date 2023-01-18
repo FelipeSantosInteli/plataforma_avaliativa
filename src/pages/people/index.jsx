@@ -1,5 +1,6 @@
 import Navbar from '../../componets/Navbar.jsx'
 import Footer from '../../componets/Footer.jsx'
+
 import './people.css'
 
 function People() {
@@ -13,8 +14,8 @@ function People() {
     return (
         <div>
             <Navbar />
-            <div id="mainScreen" class="mainScreen p-16 pt-48">
-                <section>   
+            <div id="mainScreen" class="mainScreen p-16 pt-52">
+                <section class="flex w-full">   
                     <div class="card h-12 w-8"></div>
                     <div></div>
                 </section>

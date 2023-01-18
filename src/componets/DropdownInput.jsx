@@ -4,7 +4,7 @@ import $ from 'jquery'
 import { useState } from 'react';
 import onClickOutside from 'click-outside-js';
 
-function DropdownMenu({label,placeholder, optionsArray, count}) {
+function DropdownInput({label,placeholder, optionsArray, count}) {
 
     const [isActive, setIsActive] = useState(false);
     const [selected, setSelected] = useState('');
@@ -53,4 +53,4 @@ function DropdownMenu({label,placeholder, optionsArray, count}) {
     )
 }
 
-export default DropdownMenu;
+export default DropdownInput;

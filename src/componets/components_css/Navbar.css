@@ -40,7 +40,22 @@ header ul li .link {
     text-decoration:none;
     color: var(--base_dark);
     letter-spacing: 0.1rem;
+    font-size:1rem;
     font-weight:500;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+}
+
+header ul li .link:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size:1.1rem;
+    color: var(--accent_dark);
+}
+
+header ul li .link:active {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    color: var(--secondary-color);
 }
 
 .user {

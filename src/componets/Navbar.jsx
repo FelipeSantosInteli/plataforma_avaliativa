@@ -21,10 +21,10 @@ import { Link } from 'react-router-dom';
         var compactUserName = userName.split(' ').slice(0, 2).join(' '); // retorna primeiro e segundo nome
         
         return (
-                <header class="pb-0 z-50">
+                <header class="pb-0" style={{zIndex:100000}}>
                     <div class="flex justify-between items-center flex-row z-30">
                         <div class="flex justify-between items-center flex-row">
-                            <Link to="/home" class=""><VtalLogo_black width={"11rem"} alt="logo"/></Link>
+                            <a href="/home" class=""><VtalLogo_black width={"11rem"} alt="logo"/></a>
                             <ul class="flex justify-center items-center pl-11">
                                 <li><a class="link" href="/home">Home</a></li>
                                 <li><a class="link" href="/people">People</a></li>
