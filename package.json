@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "click-outside-js": "^0.0.2",
     "jquerry": "^0.0.1-security",
     "jquery": "^3.6.3",
     "mongodb": "^4.13.0",

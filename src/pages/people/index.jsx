@@ -1,4 +1,5 @@
 import Navbar from '../../componets/Navbar.jsx'
+import Footer from '../../componets/Footer.jsx'
 import './people.css'
 
 function People() {
@@ -18,6 +19,7 @@ function People() {
                     <div></div>
                 </section>
             </div>
+            <Footer/>
         </div>
     )
 }

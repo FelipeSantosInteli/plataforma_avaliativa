@@ -1,22 +1,23 @@
-button.btn{
+button.btnLight{
     border: 0;
     border-radius: 20px;
-    background: var(--accent_dark);
-    color: var(--secondary-color);
+    background: var(--secondary-color);
+    color: var(--accent_dark);
     padding: 11px;
     width: 30%;
     transition: all .3s ease-in;
 }
   
-button:hover {
+button.btnLight:hover {
+    color: var(--accent-color);
     background-color: var(--grey1);
     box-shadow: var(--base_shadow);
     transform:translate(0,-2px);
 }
 
-button:active {
-    color: var(--accent_dark);
-    background-color: var(--secondary-color);
+button.btnLight:active {
+    color: var(--secondary-color);
+    background-color: var(--accent_dark);
     outline: .2rem var(--accent_dark) solid;
     transition: 0.1s ease-out;
     transform:translate(0,1px);
@@ -25,7 +26,7 @@ button:active {
 
 
 
-button:focus {
-    outline: .2rem var(--secondary-color) solid;
+button.btnLight:focus {
+    outline: .2rem var(--grey1) solid;
     outline-offset: 2px;
 }

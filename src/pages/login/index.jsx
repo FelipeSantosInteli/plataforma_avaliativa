@@ -1,6 +1,6 @@
 import Checkbox from '../../componets/Checkbox';
 import TextInput from '../../componets/TextInput'
-import Btn from '../../componets/Btn'
+import BtnDark from '../../componets/BtnDark'
 
 import './login.css'
 
@@ -60,8 +60,8 @@ function Login() {
             </section>
           </section>
           
-          <section class="flex flex-col content-center" style={{paddingLeft:65,paddingRight:65,paddingTop:'3rem'}}>
-            <Btn type={"submit"} text={"Entrar"} onClick={handleSubmit}/>
+          <section class="flex flex-col justify-center items-center" style={{paddingLeft:65,paddingRight:65,paddingTop:'3rem'}}>
+            <BtnDark type={"submit"} text={"Entrar"} onClick={handleSubmit}/>
           </section>
         </form>
       
