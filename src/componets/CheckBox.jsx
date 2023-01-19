@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './components_css/Checkbox.css'
-const Checkbox = ({label,count,checkFunction}) => {
+const CheckBox = ({label,count,checkFunction}) => {
   const [isChecked, setIsChecked] = useState(false);
 
   var fieldId = 'checkBox' + count;
@@ -18,6 +18,6 @@ const Checkbox = ({label,count,checkFunction}) => {
     </div>
   );
 };
-export default Checkbox;
+export default CheckBox;
 
 //   para mais variações, acessar: https://blog.logrocket.com/building-custom-checkbox-react/

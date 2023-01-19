@@ -1,6 +1,7 @@
-import Checkbox from '../../componets/Checkbox';
+// import Checkbox from '../../componets/Checkbox';
 import TextInput from '../../componets/TextInput'
 import BtnDark from '../../componets/BtnDark'
+import CheckBox from '../../componets/CheckBox'
 
 import './login.css'
 
@@ -55,7 +56,7 @@ function Login() {
             </div>
 
             <section class="flex flex-row justify-around">
-              <Checkbox count={1} label={"Continuar conectado"} checkFunction={(e) => {console.log("Continuar conectado")}}/>
+              <CheckBox count={1} label={"Continuar conectado"} checkFunction={(e) => {console.log("Continuar conectado")}}/>
               <a href='#' class="text-black text-opacity-50" style={{margin:0,padding:1}}>Esqueceu a senha?</a>
             </section>
           </section>

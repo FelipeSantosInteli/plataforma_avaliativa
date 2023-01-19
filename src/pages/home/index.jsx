@@ -1,5 +1,5 @@
 import Navbar from "../../componets/Navbar"
-import DropdownMenu from "../../componets/DropdownInput"
+import DropdownInput from "../../componets/DropdownInput"
 import BtnDark from "../../componets/BtnDark"
 import BtnLight from "../../componets/BtnLight"
 import DropdownCard from "../../componets/DropdownCard"
@@ -10,6 +10,7 @@ import $ from 'jquery'
 import './home.css'
 
 import userImage from '../../assets/images/user_placeholder.jpeg'
+
 
 function Home() {
 
@@ -61,7 +62,7 @@ function Home() {
                         <div>
                             
                             <div class="box-container p-4 flex flex-col items-center">
-                                <DropdownMenu label={"Questionários"} count="3" placeholder={"Selecione"} optionsArray={optionsArray}/>
+                                <DropdownInput label={"Questionários"} count="3" placeholder={"Selecione"} optionsArray={optionsArray}/>
                                 <br />
                                 <div>
                                     <div class="flex">
@@ -81,12 +82,12 @@ function Home() {
                         <div class="card flex flex-col justify-between p-10 w-full">
                         
                             <div class="z-40">
-                                <DropdownMenu label={"Filtros"} count="1" placeholder={"Selecione"} optionsArray={optionsArray2}/>
+                                <DropdownInput label={"Filtros"} count="1" placeholder={"Selecione"} optionsArray={optionsArray2}/>
                             </div>
 
                             <DropdownCard text={"Avaliações"} count={1} content={<div>
 
-                                    <DropdownMenu label={"Questionários"} count="4" placeholder={"Selecione"} optionsArray={optionsArray2}/>
+                                    <DropdownInput label={"Questionários"} count="4" placeholder={"Selecione"} optionsArray={optionsArray2}/>
 
                                 <br />
 

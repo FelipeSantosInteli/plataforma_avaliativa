@@ -14,7 +14,7 @@ function DropdownCard({text,content,count}) {
         <div>
             <br />
             <div id={fieldId} class="card flex flex-col justify-between overflow-clip dropdownCard h-fit closed">
-                <div class="cardHeader flex items-center py-2 px-4 bg-slate-400 w-full" onClick={(e) => {setIsActive(!isActive);cardBox.classList.replace("open", "closed");cardBox.classList.toggle("max-h-10");}}>
+                <div class="cardHeader flex items-center py-2 px-4 w-full" onClick={(e) => {setIsActive(!isActive);cardBox.classList.replace("open", "closed")}}>
                 {isActive && cardBox.classList.replace("closed", "open")}
                     <h1 class="font-semibold">{text}</h1>
                 </div>
