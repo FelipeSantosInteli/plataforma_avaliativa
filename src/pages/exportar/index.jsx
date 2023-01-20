@@ -60,7 +60,7 @@ function Exportar() {
                                 </div>
                                 
                                 <div class="z-30">
-                                    <DropdownInput count={8} label={"Nível hierárquico"} placeholder={"Selecione"} optionsArray={optionsArray2}/>
+                                    <DropdownInput count={8} label={"Gestor"} placeholder={"Selecione"} optionsArray={optionsArray2}/>
                                 </div>
                                 
                                 <div class="z-20">

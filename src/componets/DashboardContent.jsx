@@ -3,7 +3,8 @@ import { Divider } from "@mui/material";
 
 import * as React from 'react';
 import {Box,Checkbox,FormControlLabel,Paper,Table,TableBody,TableCell,TableContainer,TableHead,TablePagination,TableRow} from '@mui/material';
-import TableModel from './Table';
+import TableModel from './TableModel';
+import PiechartTest from './Piechart';
 
 
 function DashboardContent() {
@@ -50,6 +51,22 @@ function DashboardContent() {
       </Box>
     );
 
+    var columnsName = ['Status', 'Grupo']
+
+    const chartData = [
+      { name: 'Group A', value: 10, color:'#0088FE' },
+      { name: 'Group B', value: 10, color:'#00C49F' },
+      { name: 'Group C', value: 20, color:'#FFBB28' },
+      { name: 'Group D', value: 20, color:'#FF8042' },
+      { name: 'Group E', value: 40, color:'#BA55D3' }
+    ];
+
+    var total = 0
+
+    const avaliadoresTotal = chartData.map((data) => (
+      total += data.value
+    ))
+
     return(
         <div>
             <div class="w-fit pb-10">
@@ -57,10 +74,10 @@ function DashboardContent() {
                 <Divider sx={{width:"20rem",borderColor:"#DE6830",borderBottomWidth:".4rem"}}/>
             </div>
             <section class="flex flex-wrap justify-between items-stretch pb-6 w-full">
-                <div class="cardLight mb-6 p-10 w-1/2" style={{minWidth:"25rem"}}>
-                    <h2 class="font-semibold text-lg">Filtros do Gráfico</h2>
+                <div class="cardLight mb-6 p-10 w-1/2" style={{minWidth:"25rem",height:"auto"}}>
+                    <h2 class="font-semibold text-2xl">Filtros do Gráfico</h2>
                     <br />
-                    <div>
+                    <div class="">
                         <FormControlLabel
                             label="Selecionar Tudo"
                             control={
@@ -76,8 +93,18 @@ function DashboardContent() {
                     </div>
                 </div>
                 <br />
-                <div class="cardLight p-10" style={{width:"45%",minWidth:"25rem"}}>
-                    jsajksdhjka
+                <div class="cardLight h-fit flex flex-col p-10" style={{width:"45%",minWidth:"25rem", height:"40rem"}}>
+                  <h2 class="font-semibold text-2xl" style={{maxWidth:"15rem"}}>Status de Entrega de Avaliação</h2>
+                  <div class="pt-2">
+                    <div class="flex flex-row">
+                        <h3 class="font-semibold pr-1" style={{color:"var(--info)"}}>Total de avaliadores:</h3><h3>{total}</h3> 
+                    </div>
+                  </div>
+                  
+                  <div class="p-10 flex justify-center">
+                    <PiechartTest data={chartData} size={150}/>
+                  </div>
+                    
                 </div>
             </section>
             <div class="w-fit pb-10">
@@ -85,10 +112,7 @@ function DashboardContent() {
                 <Divider sx={{width:"20rem",borderColor:"#0B8C56",borderBottomWidth:".4rem"}}/>
             </div>
             <section class="cardLight p-6 w-full">
-                <h2 class="font-semibold text-xl">Resultado Filtrados</h2>
-                <br />
-
-                <TableModel/>
+                <TableModel title={"Resultado Filtrados"} displayCount={10} columnsName={['Status','Grupo','Gestor']}/>
 
             </section>
         </div>

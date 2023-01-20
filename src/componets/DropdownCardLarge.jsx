@@ -20,11 +20,14 @@ function DropdownCardLarge({title,content,headerContent,count}) {
                     <div class="pt-5 px-3 w-full">
                         <h1 class="font-semibold text-xl">{title}</h1>
                         {headerContent}
-                        <Divider sx={{width:'100%',borderBottomWidth:".15rem",borderColor:"black"}}/>
                     </div>
                 </div>
 
-                <section class="px-7 py-5 w-full">{content}</section>
+                <section class="px-7 py-5 w-full">
+                    <Divider sx={{width:'100%',borderBottomWidth:".15rem",borderColor:"black"}}/>
+                    <br />
+                    {content}
+                </section>
                 
             </div> 
             <br />
