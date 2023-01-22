@@ -25,7 +25,7 @@ function Dashboard() {
                             <h2 class="font-semibold text-xl break-normal" style={{color:"var(--info)"}}>Acompanhe os resultados das avaliações detalhadamente.</h2>
                         </div>
                     </div>
-                    <DropdownCardLarge title={"Avaliação de Aderência de Cultura"} headerContent={<div class="flex flex-row justify-between pr-20">
+                    <DropdownCardLarge count={1} title={"Avaliação de Aderência de Cultura"} headerContent={<div class="flex flex-row justify-between pr-20">
                         <div class="py-4">
                             <div class="flex flex-row">
                                <h3 class="font-semibold pr-1" style={{color:"var(--info)"}}>Status:</h3><h3>{status}</h3> 

@@ -71,7 +71,7 @@ function DashboardContent() {
         <div>
             <div class="w-fit pb-10">
                 <h1 class="font-semibold text-3xl">Acompanhamento</h1>
-                <Divider sx={{width:"20rem",borderColor:"#DE6830",borderBottomWidth:".4rem"}}/>
+                <Divider sx={{width:"auto",borderColor:"#DE6830",borderBottomWidth:".4rem"}}/>
             </div>
             <section class="flex flex-wrap justify-between items-stretch pb-6 w-full">
                 <div class="cardLight mb-6 p-10 w-1/2" style={{minWidth:"25rem",height:"auto"}}>
@@ -103,6 +103,19 @@ function DashboardContent() {
                   
                   <div class="p-10 flex justify-center">
                     <PiechartTest data={chartData} size={150}/>
+                  </div>
+
+                  <div class="flex flex-row justify-between">
+                    {
+                      chartData.map((item) => (
+                        console.log(item),
+                        <div class="flex flex-row justify-between items-center p-5">
+                          <label class="h-4 w-4 mr-1" style={{background:item.color}}></label>
+                          <h1 class="pr-1">{item.value}</h1>
+                          <h1>{item.name}</h1>
+                        </div>
+                      ))
+                    }
                   </div>
                     
                 </div>
