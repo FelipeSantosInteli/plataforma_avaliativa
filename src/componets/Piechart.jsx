@@ -1,7 +1,13 @@
-import React, { PureComponent } from 'react';
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+//Componente retirado de uma biblioteca chamada Rechart ( https://recharts.org/en-US/examples/PieChartWithCustomizedLabel ) e adaptado para utilização mais adequada à plataforma
 
+//Importação de componentes e bibliotecas
+import React from 'react';
+import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+
+//Cria o componente com suas variáveis e referenciando as informações necessárias
 function PiechartTest({data, size}) {
+
+    //As modificações relevantes para esse gráfico estão apenas em 'data' e 'size', onde é necessário indicar de maneira respectiva os dados do gráfico e o tamanho no qual ele aparecerá
       
     const RADIAN = Math.PI / 180;
     const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
@@ -16,6 +22,7 @@ function PiechartTest({data, size}) {
         );
     };
     
+    //Retorna o componente em si
     return (
         <ResponsiveContainer width={size*2} height={size*2}>
             <PieChart width={400} height={400}>
@@ -39,3 +46,5 @@ function PiechartTest({data, size}) {
 }
 
 export default PiechartTest;
+
+// Para saber mais sobre o respectivo componente e outros disponibilizados pela biblioteca, acesse: https://recharts.org/en-US
